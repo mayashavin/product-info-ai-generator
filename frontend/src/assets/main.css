@@ -1,0 +1,34 @@
+@import './base.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #app {
+  height: 100%;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  font-weight: normal;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a{
+  transition: 0.4s;
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    padding: 0 2rem;
+  }
+}

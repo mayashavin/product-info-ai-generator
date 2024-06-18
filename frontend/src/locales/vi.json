@@ -1,0 +1,54 @@
+{
+  "logo": "ImgToProduct",
+  "about": {
+    "title": "Ứng dụng tạo thông tin sản phẩm từ hình ảnh",
+    "description": "Công cụ AI này sử dụng các dịch vụ LLM để tạo ra thông tin sản phẩm từ hình ảnh. Bạn chỉ cần tải lên hình ảnh sản phẩm và chờ kết quả.",
+    "disclaimer": "Lưu ý: Ứng dụng này hiện vẫn đang trong giai đoạn thử nghiệm và kết quả có thể không chính xác 100%. Chất lượng thông tin được tạo ra phụ thuộc vào hình ảnh nhận được và độ chính xác của mô hình AI được sử dụng.",
+    "subDescription": "Phiên bản đầu tiên cho phép người dùng tạo và sao chép thông tin sản phẩm từ hình ảnh dưới định dạng JSON. Những phiên bản tiếp theo sẽ hỗ trợ nhiều tính năng hơn, cải thiện chất lượng thông tin được tạo ra và hỗ trợ kết nối trực tiếp với các hệ thống E-commerce khác nhau.",
+    "author": "Ứng dụng được phát triển bởi Maya Shavin và dựa trên mô hình GPT-4o của OpenAI.",
+    "technologies": "Các công nghệ được sử dụng",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "frontendList": "Vue, Tailwind CSS",
+    "backendList": "Python, Flask, Langchain, OpenAI API",
+    "license": "License: MIT"
+  },
+  "productInfo": {
+    "placeholder": "Thông tin về sản phẩm sẽ đuợc tạo ra ở đây",
+    "title": "Tên sản phẩm",
+    "description": "Thông tin mô tả",
+    "tags": "Từ khoá được đề xuất",
+    "error": "Quá trình tạo thông tin sản phẩm không thành công. Vui lòng thử lại hoặc thử với một hình ảnh khác."
+  },
+  "configurations": {
+    "prompt": "Prompt (Tùy chọn)",
+    "promptPlaceholder": "Nhập thông tin thêm cho mô hình tạo ra kết quả chính xác hơn.",
+    "promptHint": "Nhập thông tin thêm cho mô hình tạo ra kết quả chính xác hơn. Tối đa 120 ký tự.",
+    "language": "Ngôn ngữ (Tùy chọn)",
+    "tone": "Phong cách (Tùy chọn)",
+    "header": "Cài đặt bổ sung"
+  },
+  "languages": {
+    "en": "Tiếng Anh",
+    "es": "Tiếng Tây Ban Nha",
+    "vi": "Tiếng Việt"
+  },
+  "tones": {
+    "neutral": "Trung lập",
+    "formal": "Nghiêm túc",
+    "engaging": "Hấp dẫn"
+  },
+  "isGenerating": "Đang tạo thông tin sản phẩm...",
+  "generate": "Tạo thông tin sản phẩm",
+  "copied": "Đã sao chép",
+  "copy": "Sao chép thành JSON",
+  "upload": {
+    "imagePlaceholder": "Bấm vào nut dưới để chọn hình ảnh",
+    "isUploading": "Đang tải hình ảnh lên...",
+    "label": "Tải hình ảnh sản phẩm"
+  },
+  "footer": {
+    "madeby": "Made by",
+    "withlove": "with ❤️"
+  }
+}
