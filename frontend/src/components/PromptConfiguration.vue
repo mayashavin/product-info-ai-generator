@@ -10,7 +10,7 @@
         class="rounded-md p-2 border w-full" 
         type="text" 
         id="prompt-textarea"
-        :placeholder="$t('configurations.placeholder')" 
+        :placeholder="$t('configurations.promptPlaceholder')" 
         rows="2" maxlength="120"
         v-model="configurations.prompt"
       />

@@ -45,7 +45,7 @@ def get_image_informations(image_path: bytes, customPrompt: str, tone: str, lang
    - Product Title
    - Product Description
    - At least 13 Product Tags for SEO purposes
-   - Maximum 3 primary Colors of the Product, excluding the background color.
+   - At most 3 primary Colors of the Product, excluding the background colors.
    {customPrompt}
    The tone of the description should be {tone.lower()}.
    """

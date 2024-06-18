@@ -10,7 +10,7 @@ type Configuration = {
 const configurations = reactive<Configuration>({
   prompt: '',
   language: 'English',
-  tone: 'Neutral',
+  tone: 'neutral',
   file: null
 })
 
