@@ -39,8 +39,8 @@ def image_model(inputs: dict):
 
 parser = JsonOutputParser(pydantic_object=Product)
 
-def get_image_informations(image_path: bytes, customPrompt: str, tone: str, lang: str) -> dict:
-   vision_prompt = f"""
+def get_product_info(image_path: bytes, customPrompt: str, tone: str, lang: str) -> dict:
+   prompt = f"""
    Given the image of a product, provide the following information in {lang}:
    - Product Title
    - Product Description
@@ -49,6 +49,6 @@ def get_image_informations(image_path: bytes, customPrompt: str, tone: str, lang
    {customPrompt}
    The tone of the description should be {tone.lower()}.
    """
-   vision_chain = load_image_chain | image_model | parser
-   return vision_chain.invoke({'image_path': image_path, 
-                               'prompt': vision_prompt})
+   generate_product_chain = load_image_chain | image_model | parser
+   return generate_product_chain.invoke({'image_path': image_path, 
+                               'prompt': prompt})

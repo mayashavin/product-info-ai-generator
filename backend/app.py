@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request
-from withLC import get_image_informations
+from withLC import get_product_info
 
 app = Flask(__name__)
 
@@ -13,7 +13,7 @@ def generate():
     tone = data["tone"]
     language = data["language"]
     
-    result = get_image_informations(file.stream.read(), prompt, tone, language)
+    result = get_product_info(file.stream.read(), prompt, tone, language)
     # result = {
     #     "description":"This adorable enamel pin features a cat dressed as an assassin, complete with a sword and ninja outfit. Perfect for cat lovers and pin collectors alike.",
     #     "tags":["enamel pin","cat","assassin","cute","collectible","accessory"],
